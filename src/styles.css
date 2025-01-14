@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Gopher;
+    src: url(Gopher-Black.ttf);
+}
+
+@font-face {
+    font-family: GopherLight;
+    src: url(Gopher-Light.ttf);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(255, 193, 50);
+    gap: 8px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.app-name {
+    font-family: Gopher, Arial;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.tasks, .sidebar, .projects {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.tasks, .projects {
+    gap: 10px;
+}
+
+.heading {
+    font-family: Gopher, Arial;
+    font-weight: bold;
+}
+
+.heading-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.today, .upcoming, .project {
+    padding-left: 10px;
+    font-family: GopherLight, Arial;
+    cursor: pointer;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-edit, .project-delete, #search, #new-project {
+    all: unset;
+}
+
+#search, #new-project {
+    cursor: pointer;
+}
+
+.project-options {
+    visibility: hidden;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.project:hover .project-options {
+    visibility: visible;
+}
+
+.content {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 87%;
+}
+
+#search-task {
+    border-radius: 12px;
+    font-size: 20px;
+    width: 90%;
+    padding: 8px;
+    font-family: GopherLight, Arial;
+    border: 2px solid black;
+}
+
+#search-task:focus {
+    border: 2px solid rgb(50, 122, 255);
+    outline: none;
+}
+
+#new-task {
+    font-family: Gopher, Arial;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: rgb(255, 193, 50);
+    border: none;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
+.project-title {
+    font-family: Gopher, Arial;
+    font-size: 50px;
+    padding: 8px 0px 0px 35px;
+}
