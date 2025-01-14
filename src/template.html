@@ -3,9 +3,48 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./logo.png" type="image/x-icon">
         <title>Todo List</title>
     </head>
     <body>
-        
+        <div class="main-container">
+            <div class="sidebar">
+                <div class="logo-section">
+                    <img src="./logo.png" width="50" height="50" style="cursor: pointer; border-radius: 10px;">
+                    <div class="app-name">ToDo</div>
+                </div>
+                <div class="tasks">
+                    <div class="heading">Tasks</div>
+                    <div class="today">Today</div>
+                    <div class="upcoming">Upcoming</div>
+                </div>
+                <div class="projects">
+                    <div class="heading-section">
+                        <div class="heading">Projects</div>
+                        <button id="new-project"><img src="./plus.png" height="22" width="22"></button>
+                    </div>
+                    <div class="project">
+                        <div class="project-name">Default Project</div>
+                        <div class="project-options">
+                            <button id="1" class="project-edit"><img src="./edit.png" height="21" width="21"></button>
+                            <button id="1" class="project-delete"><img src="./delete.png" height="21" width="21"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <header>
+                    <div class="search-section">
+                        <input type="search" id="search-task" placeholder="Search Today">
+                        <button id="search"><img src="./search.png" height="30" width="30"></button>
+                    </div>
+                    <button id="new-task">+ NEW TASK</button>
+                </header>
+                <div class="main-content">
+                    <div class="project-title">Today</div>
+                    <div class="pending-tasks"></div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
