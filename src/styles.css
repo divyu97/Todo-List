@@ -78,7 +78,7 @@ html, body {
     all: unset;
 }
 
-#search, #new-project {
+#search, #new-project, #new-task {
     cursor: pointer;
 }
 
