@@ -39,6 +39,39 @@
                         <button id="search"><img src="./search.png" height="30" width="30"></button>
                     </div>
                     <button id="new-task">+ NEW TASK</button>
+                    <dialog class="add-task-dialog">
+                        <div class="details">
+                            <div class="upper">
+                                <div class="title">
+                                    <label for="title">Title</label>
+                                    <input id="title" autofocus required>
+                                </div>
+                                <div class="description">
+                                    <label for="description">Description</label>
+                                    <textarea name="description" id="description"></textarea>
+                                </div>
+                            </div>
+                            <div class="lower">
+                                <div class="duedate">
+                                    <label for="duedate">Due date</label>
+                                    <input id="duedate" type="date">
+                                </div>
+                                <div class="priority">
+                                    <label for="priority">Priority</label>
+                                    <select id="priority">
+                                        <option selected disabled>Select priority</option>
+                                        <option>High</option>
+                                        <option>Medium</option>
+                                        <option>Low</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-task-options">
+                            <button id="add-task">ADD TASK</button>
+                            <button id="add-task-cancel">CANCEL</button>
+                        </div>
+                    </dialog>
                 </header>
                 <div class="main-content">
                     <div class="project-title">Today</div>
