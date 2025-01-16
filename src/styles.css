@@ -220,6 +220,12 @@ dialog::backdrop {
     cursor: pointer;
 }
 
+#add-task:disabled {
+    background-color: rgba(50, 122, 255, 0.75);
+    color: white;
+    cursor: not-allowed;
+}
+
 #add-task-cancel {
     background-color: red;
     cursor: pointer;
