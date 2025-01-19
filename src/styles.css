@@ -74,8 +74,9 @@ html, body {
     align-items: center;
 }
 
-.project-edit, .project-delete, #search, #new-project {
+.project-edit, .project-delete, #search, #new-project, #edit-task, #delete-task {
     all: unset;
+    cursor: pointer;
 }
 
 #search, #new-project, #new-task {
@@ -140,6 +141,7 @@ header {
 .main-content {
     display: flex;
     flex-direction: column;
+    gap: 15px;
     height: 80%;
 }
 
@@ -230,4 +232,69 @@ dialog::backdrop {
     background-color: red;
     cursor: pointer;
     color: white;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 35px;
+    margin-right: 225px;
+    border: 2px solid black;
+    font-family: GopherLight;
+    border-radius: 10px;
+}
+
+.task:hover .task-options {
+    visibility: visible;
+}
+
+.task-data {
+    display: flex;
+    gap: 10px;
+}
+
+.mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:hover {
+    background-color: green;
+    border: none;
+}
+
+.task-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.task-duedate {
+    font-size: 20px;
+    color: grey;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.task-options {
+    visibility: hidden;
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
