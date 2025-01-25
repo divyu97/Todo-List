@@ -83,7 +83,7 @@ html, body {
     cursor: pointer;
 }
 
-.project-delete, #new-project {
+.project-delete, #new-project, #edit-task, #delete-task {
     display: flex;
     align-items: center;
 }
