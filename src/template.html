@@ -21,14 +21,17 @@
                 <div class="projects">
                     <div class="heading-section">
                         <div class="heading">Projects</div>
-                        <button id="new-project"><img src="./plus.png" height="21" width="21"></button>
-                    </div>
-                    <div class="project">
-                        <div class="project-name">Default Project</div>
-                        <div class="project-options">
-                            <button class="project-edit"><img src="./edit.png" height="21" width="21"></button>
-                            <button class="project-delete"><img src="./delete.png" height="21" width="21"></button>
-                        </div>
+                        <button id="new-project"><img src="./plus.png" height="20" width="20"></button>
+                        <dialog class="new-project-dialog">
+                            <div class="new-project-dialog-name-section">
+                                <label for="new-project-dialog-name">Name</label>
+                                <input id="new-project-dialog-name" autofocus required>
+                            </div>
+                            <div class="new-project-dialog-options">
+                                <button id="new-project-dialog-options-new-project-cancel">CANCEL</button>
+                                <button id="new-project-dialog-options-new-project" disabled>CREATE</button>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
