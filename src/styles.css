@@ -62,7 +62,7 @@ html, body {
     justify-content: space-between;
 }
 
-.today, .upcoming, .project {
+.today, .upcoming, .project, .overdue {
     padding-left: 10px;
     font-family: GopherLight, Arial;
     cursor: pointer;
